@@ -1,5 +1,2 @@
-set(COMPONENT_ADD_INCLUDEDIRS include)
-set(COMPONENT_SRCDIRS ".")
-set(COMPONENT_PRIV_REQUIRES "esp32-smbus")
-register_component()
-
+idf_component_register(SRCS "i2c-lcd1602.c" INCLUDE_DIRS include
+    REQUIRES "esp32-smbus")
